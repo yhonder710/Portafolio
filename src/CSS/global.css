@@ -4,9 +4,9 @@
 /* ESTILOS GLOBALES */
 :root {
   /* Colores */
-  --primary-color: #efefef;
-  --secondary-color: #7d7e85;
-  --bagroudn-color: #18181b;
+  --primary-color: #fcfcfc;
+  --secondary-color: #a1a2ab;
+  --bagroudn-color: #131212;
   --tex-font: "Roboto", sans-serif;
 }
 
@@ -14,4 +14,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: var(--tex-font);
+  background-color: #222222;
+  color: var(--primary-color);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
