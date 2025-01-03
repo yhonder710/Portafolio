@@ -1,0 +1,17 @@
+/* FUENTE */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* ESTILOS GLOBALES */
+:root {
+  /* Colores */
+  --primary-color: #efefef;
+  --secondary-color: #7d7e85;
+  --bagroudn-color: #18181b;
+  --tex-font: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
