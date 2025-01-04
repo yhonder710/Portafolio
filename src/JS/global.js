@@ -1,6 +1,7 @@
 const btnBars = document.querySelector('.btn-bars');
 const menuResponsive = document.querySelector('.menu-responsive');
 const btnClose = document.querySelector('.btn-close');
+
 const main = document.querySelector('.main');
 const redesSociales = document.querySelector('.redes-sociales');
 
@@ -10,7 +11,6 @@ btnBars.addEventListener('click', () => {
   if (menuResponsive.classList.contains('active')) {
     main.classList.toggle('hiden');
     redesSociales.classList.toggle('hiden');
-
   }
 });
 

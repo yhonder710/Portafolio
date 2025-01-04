@@ -24,11 +24,15 @@
 
 body {
   font-family: var(--tex-font);
-  background: var(--bagroudn-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   &.no-scroll {
     overflow: hidden;
   }
+}
+
+.landing-page-container {
+  background: var(--bagroudn-color);
+  height: 105vh;
 }
