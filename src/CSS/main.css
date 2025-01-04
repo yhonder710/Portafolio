@@ -39,10 +39,15 @@
 
     h1 {
       font-size: 3rem;
+      animation: leFadeInLeft2 1.5s ease;
+      animation-fill-mode: forwards;
     }
 
     p {
       font-size: 1.2rem;
+    }
+
+
     }
   }
 
@@ -52,6 +57,8 @@
 
     h1 {
       font-size: 1.8rem;
+      animation: leFadeInLeft3 1.5s ease;
+      animation-fill-mode: forwards;
     }
 
     p {
@@ -73,6 +80,26 @@
   from {
     opacity: 0;
     transform: translateX(-600px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leFadeInLeft2 {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes leFadeInLeft3 {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
   }
   to {
     opacity: 1;
@@ -114,11 +141,13 @@
     margin: 20px 0;
     .marca {
       width: 100%;
+      animation: desplazamientoTop2 1.5s ease;
     }
 
     .title-img {
       font-size: 1rem;
       font-family: var(--title-font);
+      animation: desplazamientoRight2 1.5s ease;
     }
   }
 
@@ -128,11 +157,13 @@
 
     .marca {
       width: 100%;
+      animation: desplazamientoTop3 1.5s ease;
     }
 
     .title-img {
       font-size: 1rem;
       font-family: var(--title-font);
+      animation: desplazamientoRight3 1.5s ease;
     }
   }
 }
@@ -147,10 +178,50 @@
   }
 }
 
+@keyframes desplazamientoTop2 {
+  from {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes desplazamientoTop3 {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes desplazamientoRight {
   from {
     opacity: 0;
     transform: translatex(-1200px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes desplazamientoRight2 {
+  from {
+    opacity: 0;
+    transform: translatex(-600px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes desplazamientoRight3 {
+  from {
+    opacity: 0;
+    transform: translatex(-400px);
   }
   to {
     opacity: 1;
@@ -207,4 +278,8 @@
   50% {
     transform: translateY(-10px);
   }
+}
+
+.hiden {
+  visibility: hidden;
 }
