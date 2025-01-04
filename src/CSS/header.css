@@ -1,10 +1,15 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 5px 20px;
   align-items: center;
   padding: 10px 15px;
   gap: 30px;
+  backdrop-filter: blur(6px) saturate(151%);
+  -webkit-backdrop-filter: blur(6px) saturate(151%);
+  background-color: rgba(0, 0, 0, 0.945);
+  box-shadow: var(--shadon-color);
+  padding: 5px 10px;
+  border-bottom: var(--bordes-color);
 
   .btn-bars {
     border: none;
@@ -39,6 +44,7 @@
 
 .container-logo {
   display: flex;
+  margin: 5px;
   align-items: center;
   backdrop-filter: blur(6px) saturate(151%);
   -webkit-backdrop-filter: blur(6px) saturate(151%);
@@ -58,14 +64,6 @@
 }
 
 .container-nav {
-  backdrop-filter: blur(6px) saturate(151%);
-  -webkit-backdrop-filter: blur(6px) saturate(151%);
-  background-color: rgba(0, 0, 0, 0.945);
-  border-radius: 12px;
-  box-shadow: var(--shadon-color);
-  padding: 5px 10px;
-  border-radius: 12px;
-  border: var(--bordes-color);
   .bordes {
     padding: 5px 10px;
     border-left: var(--bordes-color);
