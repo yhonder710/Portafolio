@@ -8,7 +8,7 @@
   }
 
   @media (max-width: 540px) {
-    margin-top: 0;
+    margin-top: 50px;
     flex-direction: column;
     align-items: center;
   }
@@ -56,23 +56,25 @@
         font-size: 1.2rem;
       }
     }
-  }
+    @media (max-width: 540px) {
+      width: 90%;
 
-  @media (max-width: 540px) {
-    width: 90%;
+      h1 {
+        font-size: 2rem;
+        animation: leFadeInLeft3 1.5s ease;
+        animation-fill-mode: forwards;
+        margin-top: 20px;
+        text-align: center;
+      }
 
-    h1 {
-      font-size: 1rem;
-      animation: leFadeInLeft3 1.5s ease;
-      animation-fill-mode: forwards;
-      margin-top: 10px;
-    }
-
-    p {
-      font-size: 1.4rem;
+      p {
+        font-size: 1.4rem;
+      }
     }
   }
 }
+
+/* Animaciones */
 
 @keyframes movimientoP {
   50% {
@@ -156,26 +158,28 @@
       font-family: var(--title-font);
       animation: desplazamientoRight2 1.5s ease;
     }
-  }
 
-  @media (max-width: 540px) {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    @media (max-width: 540px) {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
 
-    .marca {
-      width: 60%;
-      animation: desplazamientoTop3 1.5s ease;
-    }
+      .marca {
+        width: 60%;
+        animation: desplazamientoTop3 1.5s ease;
+      }
 
-    .title-img {
-      font-size: 1rem;
-      font-family: var(--title-font);
-      animation: desplazamientoRight3 1.5s ease;
-      margin-top: 15px;
+      .title-img {
+        font-size: 1rem;
+        font-family: var(--title-font);
+        animation: desplazamientoRight3 1.5s ease;
+        margin-top: 15px;
+      }
     }
   }
 }
+
+/* Animaciones */
 
 @keyframes desplazamientoTop {
   from {
@@ -271,14 +275,13 @@
     i {
       font-size: 1.5rem;
     }
-  }
-
-  @media (max-width: 540px) {
-    justify-content: center;
-    align-items: center;
-    margin-left: 0;
-    i {
-      font-size: 1.2rem;
+    @media (max-width: 540px) {
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      i {
+        font-size: 1.2rem;
+      }
     }
   }
 }
