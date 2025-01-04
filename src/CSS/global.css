@@ -18,7 +18,10 @@
 
 body {
   font-family: var(--tex-font);
-  background-color: #222222;
+  background: linear-gradient(180deg, #002f20 10%, #0b7151);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: var(--primary-color);
 
   &.no-scroll {

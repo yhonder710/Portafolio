@@ -1,14 +1,10 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin: 5px 20px;
   align-items: center;
   padding: 10px 15px;
   gap: 30px;
-
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(11, 12, 13, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.125);
 
   .btn-bars {
     border: none;
@@ -19,6 +15,9 @@
     i {
       font-size: 20px;
       color: var(--primary-color);
+      &:hover {
+        color: #66efb1;
+      }
     }
   }
 
@@ -35,18 +34,29 @@
 .container-logo {
   display: flex;
   align-items: center;
+  backdrop-filter: blur(6px) saturate(151%);
+  -webkit-backdrop-filter: blur(6px) saturate(151%);
+  background-color: rgba(38, 39, 41, 0.66);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.538);
 
   i {
     font-size: 1.8rem;
-    color: var(--primary-color);
+    padding: 8px;
+    color: #ebfef4;
 
     &:hover {
-      color: var(--secondary-color);
+      color: #66efb1;
     }
   }
 }
 
 .container-nav {
+  .bordes {
+    padding: 5px 10px;
+    border-left: 1px solid #01fa92;
+    border-right: 1px solid #01fa92;
+  }
   ul {
     display: flex;
     text-decoration: none;
@@ -57,12 +67,12 @@
 
       a {
         text-decoration: none;
-        color: var(--primary-color);
+        color: #ebfef4;
         font-size: 1.3rem;
         font-weight: 700;
 
         &:hover {
-          color: var(--secondary-color);
+          color: #66efb1;
         }
 
         &:active {
@@ -80,7 +90,10 @@
 .menu-responsive {
   transition: all 0.5s;
   position: absolute;
-  background: #191919;
+  background: linear-gradient(180deg, #002f20 10%, #0b7151);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   top: 0;
   left: -100%;
   width: 100%;
@@ -102,6 +115,10 @@
 
     li {
       list-style: none;
+      border-bottom: 1px solid #01fa92;
+      padding: 10px 5px;
+      border-radius: 15%;
+      margin-bottom: 5px;
 
       a {
         text-decoration: none;
