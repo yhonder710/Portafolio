@@ -16,7 +16,7 @@
       font-size: 20px;
       color: var(--primary-color);
       &:hover {
-        color: #66efb1;
+        color: var(--hover-color);
       }
     }
   }
@@ -27,6 +27,12 @@
     .btn-bars {
       display: block;
       cursor: pointer;
+      backdrop-filter: blur(6px) saturate(151%);
+      -webkit-backdrop-filter: blur(6px) saturate(151%);
+      background-color: rgba(0, 0, 0, 0.788);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.538);
+      padding: 6px 12px;
     }
   }
 }
@@ -36,26 +42,34 @@
   align-items: center;
   backdrop-filter: blur(6px) saturate(151%);
   -webkit-backdrop-filter: blur(6px) saturate(151%);
-  background-color: rgba(38, 39, 41, 0.66);
+  background-color: rgb(255, 255, 255);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.538);
+  box-shadow: var(--shadon-color);
 
   i {
     font-size: 1.8rem;
     padding: 8px;
-    color: #ebfef4;
+    color: #000000;
 
     &:hover {
-      color: #66efb1;
+      color: var(--hover-color);
     }
   }
 }
 
 .container-nav {
+  backdrop-filter: blur(6px) saturate(151%);
+  -webkit-backdrop-filter: blur(6px) saturate(151%);
+  background-color: rgba(0, 0, 0, 0.945);
+  border-radius: 12px;
+  box-shadow: var(--shadon-color);
+  padding: 5px 10px;
+  border-radius: 12px;
+  border: var(--bordes-color);
   .bordes {
     padding: 5px 10px;
-    border-left: 1px solid #01fa92;
-    border-right: 1px solid #01fa92;
+    border-left: var(--bordes-color);
+    border-right: var(--bordes-color);
   }
   ul {
     display: flex;
@@ -67,16 +81,16 @@
 
       a {
         text-decoration: none;
-        color: #ebfef4;
+        color: var(--primary-color);
         font-size: 1.3rem;
         font-weight: 700;
 
         &:hover {
-          color: #66efb1;
+          color: var(--hover-color);
         }
 
         &:active {
-          color: #66efb1;
+          color: var(--hover-color);
         }
       }
     }
@@ -90,7 +104,7 @@
 .menu-responsive {
   transition: all 0.5s;
   position: absolute;
-  background: linear-gradient(180deg, #002f20 10%, #0b7151);
+  background: var(--bagroudn-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -115,23 +129,23 @@
 
     li {
       list-style: none;
-      border-bottom: 1px solid #01fa92;
+      border-bottom: var(--bordes-color);
       padding: 10px 5px;
       border-radius: 15%;
       margin-bottom: 5px;
 
       a {
         text-decoration: none;
-        color: #ebfef4;
+        color: var(--responsive-color);
         font-size: 1.3rem;
         font-weight: 700;
 
         &:hover {
-          color: #66efb1;
+          color: var(--hover-color);
         }
 
         &:active {
-          color: #66efb1;
+          color: var(--hover-color);
         }
       }
     }
@@ -151,9 +165,9 @@
 
     i {
       font-size: 20px;
-      color: #ebfef4;
+      color: var(--responsive-color);
       &:hover {
-        color: #66efb1;
+        color: var(--hover-color);
       }
     }
   }

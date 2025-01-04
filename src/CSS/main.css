@@ -1,0 +1,141 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px;
+}
+
+/* Titulo */
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 45%;
+  margin: 60px 20px;
+
+  h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    font-family: var(--title-font);
+    text-shadow: 0 0 8px #000000c2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    animation: leFadeInLeft 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+
+  p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    animation: leFadeInLeft 2.5s ease;
+    animation-fill-mode: forwards;
+  }
+
+  @media (max-width: 768px) {
+    width: 45%;
+    margin: 20px 0;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@keyframes leFadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-600px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Imagen */
+
+.img {
+  color: #ffffff;
+  width: 42%;
+  text-align: center;
+
+  .marca {
+    border: var(--bordes-color);
+    box-shadow: var(--shadon-color);
+    border-radius: 10px;
+  }
+
+  .title-img {
+    font-size: 2rem;
+    font-family: var(--title-font);
+    backdrop-filter: blur(6px) saturate(151%);
+    -webkit-backdrop-filter: blur(6px) saturate(151%);
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 12px;
+    border: var(--bordes-color);
+    box-shadow: var(--shadon-color);
+    margin-top: 5px;
+    padding: 8px 10px;
+    box-shadow: var(--shadon-color);
+  }
+
+  @media (max-width: 768px) {
+    width: 45%;
+    margin: 20px 0;
+    ma .marca {
+      width: 100%;
+    }
+
+    .title-img {
+      font-size: 1rem;
+      font-family: var(--title-font);
+    }
+  }
+}
+
+.redes-sociales {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  animation: salto 2s infinite;
+
+  i {
+    color: #fff;
+    font-size: 2.2rem;
+    cursor: pointer;
+    backdrop-filter: blur(6px) saturate(151%);
+    -webkit-backdrop-filter: blur(6px) saturate(151%);
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.538);
+    padding: 6px 12px;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #000;
+      scale: 1.1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    justify-content: center;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes salto {
+  50% {
+    transform: translateY(-10px);
+  }
+}

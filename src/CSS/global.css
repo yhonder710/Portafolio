@@ -1,13 +1,19 @@
 /* FUENTE */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 
 /* ESTILOS GLOBALES */
 :root {
   /* Colores */
-  --primary-color: #fcfcfc;
-  --secondary-color: #a1a2ab;
-  --bagroudn-color: #131212;
+  --primary-color: #ffffff;
+  --responsive-color: #ffffff;
+  --secondary-color: #3133d0;
+  --bagroudn-color: linear-gradient(180deg, #03162e 10%, #1414a5);
+  --bordes-color: 1px solid #ffffff;
+  --hover-color: #646276;
   --tex-font: "Roboto", sans-serif;
+  --title-font: "DM Serif Text", serif;
+  --shadon-color: 0 0 10px #1c1d1c96;
 }
 
 * {
@@ -18,11 +24,10 @@
 
 body {
   font-family: var(--tex-font);
-  background: linear-gradient(180deg, #002f20 10%, #0b7151);
+  background: var(--bagroudn-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: var(--primary-color);
   &.no-scroll {
     overflow: hidden;
   }
