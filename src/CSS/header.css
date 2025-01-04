@@ -76,7 +76,7 @@
         }
 
         &:active {
-          color: var(--secondary-color);
+          color: #66efb1;
         }
       }
     }
@@ -122,16 +122,16 @@
 
       a {
         text-decoration: none;
-        color: var(--primary-color);
+        color: #ebfef4;
         font-size: 1.3rem;
         font-weight: 700;
 
         &:hover {
-          color: var(--secondary-color);
+          color: #66efb1;
         }
 
         &:active {
-          color: var(--secondary-color);
+          color: #66efb1;
         }
       }
     }
@@ -151,7 +151,10 @@
 
     i {
       font-size: 20px;
-      color: var(--primary-color);
+      color: #ebfef4;
+      &:hover {
+        color: #66efb1;
+      }
     }
   }
 }

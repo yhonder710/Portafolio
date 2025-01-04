@@ -23,7 +23,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: var(--primary-color);
-
   &.no-scroll {
     overflow: hidden;
   }
