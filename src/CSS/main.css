@@ -153,7 +153,7 @@
 
   @media (max-width: 540px) {
     width: 40%;
-    margin: 20px 10px;
+    margin: 20px 0;
 
     .marca {
       width: 100%;
