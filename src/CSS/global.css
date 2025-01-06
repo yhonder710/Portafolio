@@ -4,25 +4,31 @@
 
 /* ESTILOS GLOBALES */
 :root {
-  /* Colores */
-  --primary-color: #ffffff;
+  /* Colores  landing page*/
+  --primary-color: #fffffff0;
   --responsive-color: #ffffff;
   --secondary-color: #3133d0;
-  --bagroudn-color: linear-gradient(180deg, #03162e 10%, #1414a5);
-  --bordes-color: 1px solid #ffffff;
-  --hover-color: #646276;
+  --bagroudn-color: linear-gradient(180deg, #04088f 10%, #2020bd);
+  --bordes-color: 1px solid #ffffff9b;
+  --hover-color: #ffffffa3;
   --tex-font: "Roboto", sans-serif;
   --title-font: "DM Serif Text", serif;
   --shadon-color: 0 0 10px #1c1d1c96;
+
+  /* Secccion 1*/
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  background: var(--bagroudn-color);
+  height: 100vh;
+  color: #ffffff;
   font-family: var(--tex-font);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -32,7 +38,11 @@ body {
   }
 }
 
-.landing-page-container {
-  background: var(--bagroudn-color);
-  height: 100vh;
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

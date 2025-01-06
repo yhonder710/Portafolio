@@ -1,0 +1,313 @@
+.seccion {
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Barra de herramientas*/
+  .container-herramientas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: aparecer 2s both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+
+    h3 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      font-family: var(--title-font);
+      text-shadow: var(--shadon-color);
+    }
+
+    .container-iconos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      gap: 40px;
+      text-decoration: none;
+      font-size: 4rem;
+      font-family: var(--title-font);
+      backdrop-filter: blur(6px) saturate(151%);
+      -webkit-backdrop-filter: blur(6px) saturate(151%);
+      background-color: rgba(0, 0, 1, 0.704);
+      border-radius: 12px;
+      border: var(--bordes-color);
+      box-shadow: var(--shadon-color);
+
+      li {
+        list-style: none;
+
+        .html {
+          color: orangered;
+        }
+
+        .css {
+          color: blueviolet;
+        }
+
+        .js {
+          color: gold;
+        }
+
+        .git {
+          color: rgb(255, 77, 0);
+        }
+      }
+    }
+  }
+
+  /* Sobre mi */
+
+  .sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    animation: aparecer 2s both;
+    animation-timeline: view();
+    animation-range: cover 0% cover 50%;
+
+    h3 {
+      font-size: 3rem;
+      font-family: var(--title-font);
+      text-shadow: var(--shadon-color);
+    }
+
+    .container-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 1.3rem;
+        padding: 10px;
+        font-family: var(--text-font);
+        backdrop-filter: blur(6px) saturate(151%);
+        -webkit-backdrop-filter: blur(6px) saturate(151%);
+        background-color: rgba(0, 0, 0, 0.704);
+        border-radius: 12px;
+        border: var(--bordes-color);
+        box-shadow: var(--shadon-color);
+      }
+    }
+
+    .foto-perfil {
+      margin-left: 40px;
+      img {
+        width: 200px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  /* Lista de proyectos*/
+
+  .seccion-proyectos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    animation: aparecer 2s both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 50%;
+
+    h3 {
+      font-size: 3rem;
+      font-family: var(--title-font);
+      text-shadow: var(--shadon-color);
+      margin-bottom: 40px;
+    }
+
+    .proyectos {
+      display: grid;
+      grid-template-columns: repeat(2, 520px);
+      justify-items: center;
+      align-items: center;
+      gap: 30px;
+
+      .container {
+        width: 400px;
+        height: 450px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        backdrop-filter: blur(6px) saturate(151%);
+        -webkit-backdrop-filter: blur(6px) saturate(151%);
+        background-color: rgba(0, 0, 0, 0.704);
+        border: var(--bordes-color);
+        box-shadow: var(--shadon-color);
+
+        img {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+        }
+
+        .glass {
+          width: 100%;
+          height: 0px;
+          position: absolute;
+          bottom: 0;
+          backdrop-filter: blur(4px) saturate(200%);
+          -webkit-backdrop-filter: blur(4px) saturate(200%);
+          background-color: rgba(255, 255, 255, 0.653);
+          border: 1px solid rgba(255, 255, 255, 0.125);
+          box-shadow: var(--shadon-color);
+          transition: 500ms all;
+          visibility: hidden;
+
+          .contenido-del-proyecto {
+            color: #000;
+            margin: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            h4 {
+              font-size: 1.3rem;
+              color: #340576;
+              text-shadow: 0 0 6px #1c1d1c7b;
+            }
+
+            p {
+              text-align: justify;
+              font-family: var(--text-font);
+              font-weight: 400;
+            }
+
+            .lenguajes-container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .lenguajes {
+                ul {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 20px;
+                  font-size: 2.5rem;
+                  filter: drop-shadow(0 0 6px #1c1d1c7b);
+
+                  li {
+                    list-style: none;
+
+                    .html {
+                      color: orangered;
+                    }
+
+                    .css {
+                      color: blueviolet;
+                    }
+
+                    .js {
+                      color: gold;
+                    }
+                  }
+                }
+              }
+
+              .link {
+                i {
+                  color: #340576;
+                  filter: drop-shadow(0 0 6px #1c1d1c7b);
+                }
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .glass {
+            visibility: visible;
+            height: 240px;
+          }
+        }
+      }
+    }
+  }
+
+  /*Contacto*/
+  .contact {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+    animation: aparecer 2s both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 50%;
+
+    backdrop-filter: blur(6px) saturate(151%);
+    -webkit-backdrop-filter: blur(6px) saturate(151%);
+    background-color: rgba(0, 0, 1, 0.704);
+    border-radius: 12px;
+    border: var(--bordes-color);
+    box-shadow: var(--shadon-color);
+
+    h4 {
+      font-size: 2.4rem;
+      font-family: var(--title-font);
+      text-shadow: var(--shadon-color);
+    }
+
+    .formulario-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 5px;
+
+      input {
+        padding: 10px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+      }
+
+      textarea {
+        height: 80px;
+        padding: 10px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        resize: none;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+          width: 40%;
+          padding: 8px;
+          font-size: 1.3rem;
+          border-radius: 10px;
+          outline: none;
+          border: none;
+          background-color: #ffffff;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #807c7c;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

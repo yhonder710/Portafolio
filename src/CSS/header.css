@@ -6,10 +6,14 @@
   gap: 30px;
   backdrop-filter: blur(6px) saturate(151%);
   -webkit-backdrop-filter: blur(6px) saturate(151%);
-  background-color: rgba(0, 0, 0, 0.945);
+  background-color: rgba(0, 0, 0, 0.758);
   box-shadow: var(--shadon-color);
   padding: 5px 10px;
   border-bottom: var(--bordes-color);
+  animation-timeline: scroll();
+  position: sticky;
+  z-index: 10;
+  top: 0;
 
   .btn-bars {
     border: none;
@@ -44,11 +48,10 @@
 
 .container-logo {
   display: flex;
-  margin: 5px;
   align-items: center;
   backdrop-filter: blur(6px) saturate(151%);
   -webkit-backdrop-filter: blur(6px) saturate(151%);
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.832);
   border-radius: 12px;
   box-shadow: var(--shadon-color);
 
@@ -58,7 +61,7 @@
     color: #000000;
 
     &:hover {
-      color: var(--hover-color);
+      color: #313041;
     }
   }
 }

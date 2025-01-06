@@ -10,15 +10,17 @@
   <link rel="stylesheet" href="src/CSS/global.css">
   <link rel="stylesheet" href="src/CSS/header.css">
   <link rel="stylesheet" href="src/CSS/main.css">
+  <link rel="stylesheet" href="src/CSS/barra.css">
+  <link rel="stylesheet" href="src/CSS/footer.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <!-- Landing Page -->
-  <div class="landing-page-container">
 
+
+  <div class="container-container">
     <!-- MENU -->
     <header class="header">
 
@@ -28,9 +30,9 @@
 
       <nav class="container-nav">
         <ul class="nav">
-          <li><a href="#">Proyectos</a></li>
-          <li><a class="bordes" href="#">Lenguajes</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#sobreMi">Sobre mi</a></li>
+          <li><a class="bordes" href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
 
@@ -54,33 +56,169 @@
 
     </header>
 
-    <!-- CONTENIDO RPINCIPAL -->
+    <!-- Landing Page -->
+    <aside class="landing-page-container">
 
-    <main class="main">
-      <section class="title-container">
-        <h1>Yhonder Aguero</h1>
-        <p>Full Stack Developer</p>
-      </section>
+      <!-- CONTENIDO RPINCIPAL -->
 
-      <section class="img">
-        <div class="container-img">
-          <img class="marca" src="public/logo.svg" alt="logo">
-        </div>
-        <h2 class="title-img">Aguero Innovation</h2>
-      </section>
+      <aside class="main">
+        <section class="title-container">
+          <h1>Yhonder Aguero</h1>
+          <p>Full Stack Developer</p>
+        </section>
 
-    </main>
+        <section class="img">
+          <div class="container-img">
+            <img class="marca" src="public/logo.svg" alt="logo">
+          </div>
+          <h2 class="title-img">Me expecializo en la creacion de paginas web y al diseño
+          </h2>
+        </section>
 
-    <div class="redes-sociales">
+      </aside>
+
       <div class="redes-sociales">
-        <div class="red-1">
+        <div class="redes-sociales">
           <a href="#"> <i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
         </div>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
       </div>
-    </div>
+    </aside>
+
+
+    <!-- Seccion de proyectos -->
+    <main class="seccion">
+
+      <section class="container-herramientas" id="sobreMi">
+        <h3>Herramientas Aprendidas</h3>
+        <ul class="container-iconos">
+          <li><i class="fa-brands fa-html5 html"></i></li>
+          <li><i class="fa-brands fa-css css"></i></li>
+          <li><i class="fa-brands fa-js js"></i></li>
+          <li><i class="fa-brands fa-git-alt git"></i></li>
+        </ul>
+      </section>
+
+      <section class="sobre-mi">
+        <h3>Sobre mi</h3>
+
+        <div class="container-items">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi asperiores sint modi nihil mollitia
+            deserunt
+            veritatis vel iure aspernatur maxime, neque perspiciatis fugiat soluta officiis doloribus, totam
+            consequuntur
+            quisquam tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fuga natus earum
+            recusandae adipisci, qui tenetur aliquam perferendis sint, doloribus odio consequuntur nulla at voluptas.
+            Perferendis facere dolorum ad magni?</p>
+
+          <div class="foto-perfil">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/010/260/479/non_2x/default-avatar-profile-icon-of-social-media-user-in-clipart-style-vector.jpg"
+              alt="">
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <section class="seccion-proyectos" id="proyectos">
+        <h3>Proyectos</h3>
+
+        <article class="proyectos">
+          <div class="img">
+            <div class="container">
+              <img src="https://radiocassette.cl/wp-content/uploads/2024/03/peaky-blinders-tommy-shelby-1654869045.jpg">
+              <div class="glass">
+                <div class="contenido-del-proyecto">
+                  <h4>Proyecto 1</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magni cupiditate iusto doloribus
+                    autem
+                    aliquid cumque, vitae velit? Iste maxime atque delectus dolorem exercitationem facilis excepturi
+                    similique, quas quis expedita.</p>
+                  <div class="lenguajes-container">
+
+                    <div class="lenguajes">
+                      <ul>
+                        <li><i class="fa-brands fa-html5 html"></i></li>
+                        <li><i class="fa-brands fa-css css"></i></li>
+                        <li><i class="fa-brands fa-js js"></i></li>
+                      </ul>
+                    </div>
+
+                    <div class="link">
+                      <a href="#"><i class="fa-solid fa-share-from-square enlace"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="img">
+            <div class="container">
+              <img src="https://radiocassette.cl/wp-content/uploads/2024/03/peaky-blinders-tommy-shelby-1654869045.jpg">
+              <div class="glass">
+                <div class="contenido-del-proyecto">
+                  <h4>Proyecto 1</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magni cupiditate iusto doloribus
+                    autem
+                    aliquid cumque, vitae velit? Iste maxime atque delectus dolorem exercitationem facilis excepturi
+                    similique, quas quis expedita.</p>
+                  <div class="lenguajes-container">
+
+                    <div class="lenguajes">
+                      <ul>
+                        <li><i class="fa-brands fa-html5 html"></i></li>
+                        <li><i class="fa-brands fa-css css"></i></li>
+                        <li><i class="fa-brands fa-js js"></i></li>
+                      </ul>
+                    </div>
+
+                    <div class="link">
+                      <a href="#"><i class="fa-solid fa-share-from-square enlace"></i></a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </article>
+
+      </section>
+
+      <section class="contact" id="contacto">
+        <h4>Contacto</h4>
+        <form class="formulario-container">
+
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" placeholder="Nombre">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email">
+
+          <label for="textarea">Mensaje</label>
+          <textarea name="textarea" id="textarea" placeholder="Mensaje"></textarea>
+
+          <div class="btn">
+            <button>Enviar</button>
+          </div>
+
+
+        </form>
+      </section>
+    </main>
   </div>
+
+  <footer>
+    <p>© 2025 KPO710. Todos los derechos reservados.</p>
+  </footer>
 
 
 
