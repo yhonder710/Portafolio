@@ -24,7 +24,8 @@
     margin: 60px 20px;
 
     h1 {
-      font-size: 5rem;
+      font-weight: 300;
+      font-size: 4rem;
       color: #fff;
       text-align: center;
       font-family: var(--title-font);
@@ -122,8 +123,10 @@
   color: #ffffff;
   width: 42%;
   text-align: center;
+  margin-top: 60px;
 
   .marca {
+    width: 480px;
     border: var(--bordes-color);
     box-shadow: var(--shadon-color);
     border-radius: 10px;
@@ -133,7 +136,7 @@
 
   .title-img {
     font-weight: 100;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--text-font);
     backdrop-filter: blur(6px) saturate(151%);
     -webkit-backdrop-filter: blur(6px) saturate(151%);

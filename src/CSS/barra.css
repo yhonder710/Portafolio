@@ -67,7 +67,7 @@
   /* Sobre mi */
 
   .sobre-mi {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +138,6 @@
       grid-template-columns: repeat(2, 520px);
       justify-items: center;
       align-items: center;
-      gap: 30px;
 
       .container {
         width: 400px;
@@ -245,13 +244,13 @@
 
   /*Contacto*/
   .contact {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 150px;
+    margin-top: 160px;
     animation: aparecer 2s both;
     animation-timeline: view();
     animation-range: cover 5% cover 50%;
