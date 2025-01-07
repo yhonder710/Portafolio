@@ -115,7 +115,7 @@
 
       .text-items {
         font-weight: 100;
-        text-align: justify;
+        text-align: center;
         font-size: 1.2rem;
         padding: 18px;
         font-family: var(--text-font);
@@ -224,12 +224,12 @@
 
             h4 {
               font-size: 1.3rem;
-              color: #fff;
+              color: #0effe3;
               text-shadow: 0 0 6px #1c1d1c7b;
             }
 
             p {
-              text-align: justify;
+              text-align: center;
               font-family: var(--text-font);
               font-weight: 400;
             }
@@ -304,7 +304,7 @@
 
     backdrop-filter: blur(6px) saturate(151%);
     -webkit-backdrop-filter: blur(6px) saturate(151%);
-    background-color: rgba(0, 0, 1, 0.704);
+    background-color: rgba(0, 0, 1, 0.901);
     border-radius: 12px;
     border: var(--bordes-color);
     box-shadow: var(--shadon-color);
@@ -314,6 +314,7 @@
       font-family: var(--title-font);
       text-shadow: var(--shadon-color);
       font-weight: 100;
+      color: #00eaff;
     }
 
     .formulario-container {
@@ -325,6 +326,7 @@
 
       label {
         font-size: 1.4rem;
+        color: #00eaff;
       }
 
       input {
@@ -332,7 +334,12 @@
         font-size: 1rem;
         border-radius: 10px;
         outline: none;
-        border: none;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+
+        &::placeholder {
+          color: #ffffff;
+        }
       }
 
       textarea {
@@ -344,6 +351,12 @@
         border: none;
         resize: none;
         margin-bottom: 15px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+
+        &::placeholder {
+          color: #ffffff;
+        }
       }
 
       .btn {
@@ -356,14 +369,15 @@
           padding: 8px;
           font-size: 1rem;
           border-radius: 10px;
-          outline: none;
-          border: none;
-          background-color: #ffffff;
+          border: 1px solid #00eaff;
+          color: #ffffff;
+          background-color: transparent;
           cursor: pointer;
 
           &:hover {
-            background-color: #00eeff;
-            color: #fff;
+            background-color: #000000a9;
+            border: 1px solid #00eaff;
+            color: #00eaff;
           }
         }
       }

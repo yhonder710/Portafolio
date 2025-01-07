@@ -59,9 +59,13 @@
     font-size: 1.8rem;
     padding: 8px;
     color: #000000;
+  }
 
-    &:hover {
-      color: #313041;
+  &:hover {
+    background-color: #000000;
+
+    i {
+      color: #00eaff;
     }
   }
 }

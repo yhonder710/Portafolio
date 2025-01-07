@@ -8,9 +8,9 @@
   --primary-color: #fffffff0;
   --responsive-color: #ffffff;
   --secondary-color: #3133d0;
-  --bagroudn-color: linear-gradient(180deg, #191d96 20%, #5b7ff6);
+  --bagroudn-color: linear-gradient(180deg, #0b0f96 20%, #2a5af9);
   --bordes-color: 1px solid #ffffff9b;
-  --hover-color: #ffffffa3;
+  --hover-color: #00eaff;
   --tex-font: "Roboto", sans-serif;
   --title-font: "DM Serif Text", serif;
   --shadon-color: 0 0 10px #1c1d1c96;
@@ -22,7 +22,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {

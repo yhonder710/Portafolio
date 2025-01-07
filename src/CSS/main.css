@@ -37,7 +37,7 @@
     }
 
     p {
-      color: #fff;
+      color: #00ffe1;
       font-weight: 300;
       text-align: center;
       margin-top: 15px;
@@ -261,14 +261,13 @@
     cursor: pointer;
     backdrop-filter: blur(6px) saturate(151%);
     -webkit-backdrop-filter: blur(6px) saturate(151%);
-    background-color: rgba(0, 0, 0, 0.704);
+    background-color: rgba(0, 0, 0, 0.793);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.538);
     padding: 6px 12px;
 
     &:hover {
-      background-color: #fff;
-      color: #000;
+      color: #00eaff;
       border: 1px solid #000;
       scale: 1.1;
     }
