@@ -1,0 +1,35 @@
+.mainText {
+  text-shadow: none;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #003ECD;
+  animation: textPulseColor 10s alternate infinite;
+}
+
+
+@keyframes textPulseColor {
+  0% {
+    -webkit-text-stroke: 1.5px #003ECD;
+    filter: drop-shadow(0 0 2px #003ECD);
+  }
+
+  25% {
+    -webkit-text-stroke: 1.5px #fbff00;
+    filter: drop-shadow(0 0 2px #fbff00);
+  }
+
+  50% {
+    -webkit-text-stroke: 1.5px #13ff00;
+    filter: drop-shadow(0 0 2px #13ff00);
+  }
+
+  75% {
+    -webkit-text-stroke: 1.5px #ff6800;
+    filter: drop-shadow(0 0 2px #ff6800);
+  }
+
+  100% {
+    -webkit-text-stroke: 1.5px #00ffb9;
+    filter: drop-shadow(0 0 2px #00ffb9);
+
+  }
+}
