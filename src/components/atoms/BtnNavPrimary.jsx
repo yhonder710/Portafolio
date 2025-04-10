@@ -6,7 +6,7 @@ export function BtnNavPrimary() {
   return (
     <ButtonHome>
       <FaCode className="tf" />
-      Home
+      Inicio
     </ButtonHome>
   )
 }

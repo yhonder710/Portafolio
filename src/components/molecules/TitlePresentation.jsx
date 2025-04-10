@@ -6,9 +6,9 @@ import style from '../atoms/atoms.module.css'
 export function TitlePresentation() {
   return (
     <Container>
-      <span className='textSecondary'>I`m Yhonder</span>
+      <span className='textSecondary'>Soy Yhonder</span>
       <h1 className='Title'>Full <span className={style.mainText}>stack</span> developer</h1>
-      <p>Programming is an exciting journey that arouses my curiosity and drives me to continue learning, as each line of code is an opportunity to create and transform ideas into reality.</p>
+      <p>La programación es un viaje emocionante que despierta mi curiosidad y me impulsa a seguir aprendiendo, ya que cada línea de código es una oportunidad para crear y transformar ideas en realidad.</p>
     </Container>
   );
 };

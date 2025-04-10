@@ -16,10 +16,10 @@ import { Link } from 'react-router-dom';
 export function NavOption() {
   return (
     <NavContainer>
-      <Link to="/about"><BtnNavSecondary text={'About me'} icon={<FaRegUser />} /></Link>
-      <Link to="/skill"><BtnNavSecondary text={'Skill'} icon={<IoIosBody />} /></Link>
-      <Link to="/projects"><BtnNavSecondary text={'Projects'} icon={<PiProjectorScreenChartDuotone />} /></Link>
-      <Link to="/contact"><BtnNavSecondary text={'Contact'} icon={<MdOutlinePermPhoneMsg />} /></Link>
+      <Link to="/about"><BtnNavSecondary text={'Sobre mi'} icon={<FaRegUser />} /></Link>
+      <Link to="/skill"><BtnNavSecondary text={'Habilidades'} icon={<IoIosBody />} /></Link>
+      <Link to="/projects"><BtnNavSecondary text={'Proyectos'} icon={<PiProjectorScreenChartDuotone />} /></Link>
+      <Link to="/contact"><BtnNavSecondary text={'Contacto'} icon={<MdOutlinePermPhoneMsg />} /></Link>
     </NavContainer>
   )
 }

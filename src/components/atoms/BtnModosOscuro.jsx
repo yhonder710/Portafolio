@@ -16,9 +16,9 @@ export function BtnModosOscuro() {
 
   return (
     <Container onClick={handleTogle}>
-      <span className={classSun}>EN</span>
+      <span className={classSun}>ES</span>
       <div className={classTogle}></div>
-      <span className={classMoon}>ES</span>
+      <span className={classMoon}>EN</span>
     </Container>
   );
 };
@@ -105,7 +105,7 @@ const Container = styled.div`
 
   @keyframes animacionLuces {
     from{
-      opacity: 40%;
+      opacity: 30%;
     }
     to{
       opacity: 100%;
