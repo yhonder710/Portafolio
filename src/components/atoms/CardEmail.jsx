@@ -1,24 +1,48 @@
 import styled from 'styled-components'
 import { FaGoogle } from "react-icons/fa";
 import { LuCopy } from "react-icons/lu";
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { FaRegCheckCircle } from "react-icons/fa";
+
 
 
 
 export function CardEmail() {
-  const [texto, setTexto] = useState("yhonderaguero@gmail.com");
+  const modalRef = useRef("yhonderaguero@gmail.com")
+  const [modal, setModal] = useState(false)
+
+  const classModal = modal ? 'modal on' : 'modal'
 
 
   const copiarEmail = () => {
-    navigator.clipboard.writeText(texto)
+    navigator.clipboard.writeText(modalRef.current)
+    setModal(true)
   };
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (modal === true) {
+        setModal(false)
+      }
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, [modal]);
+
   return (
-    <Container>
-      <FaGoogle className='iconGoogle' />
-      <strong>{texto}</strong>
-      <button onClick={copiarEmail}><LuCopy /></button>
-    </Container>
+    <>
+      <Container>
+        <FaGoogle className='iconGoogle' />
+        <strong>{modalRef.current}</strong>
+        <button onClick={copiarEmail}><LuCopy /></button>
+      </Container>
+      <Modal >
+        <div className={classModal}>
+          <FaRegCheckCircle color='#2bd600' size={25} />
+          <span>Email copiado</span>
+        </div>
+      </Modal>
+    </>
   );
 };
 
@@ -75,3 +99,27 @@ const Container = styled.div`
   }
 `;
 
+const Modal = styled.div`
+  .modal{
+    width: 170px;
+    height: 45px;
+    background-color: #000000a4;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border-radius: 10px;
+    border: 1px solid #ffffff58;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    color: #2bd600;
+    opacity: 0;
+    transition: 500ms;
+  }
+
+  .modal.on{
+    opacity: 100;
+  }
+
+`

@@ -1,9 +1,6 @@
 import styled from 'styled-components'
 import { TitlePresentation, ContactPresentation, LucesNeon } from '../../index.js'
 
-
-
-
 export function ContentPresentation() {
 
 
@@ -28,6 +25,7 @@ const Container = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: center;
   align-items: center;
   padding-top: 80px;

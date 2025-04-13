@@ -7,7 +7,6 @@ export function BtnCv() {
   return (
     <ButtonContainer>
       <span className='iconContact'><PiReadCvLogoLight /></span>
-      Cv
     </ButtonContainer>
   );
 };
